@@ -1,0 +1,122 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$9PmXcJALuJ8DgngEXfwFAE$6+ZHwsKgCNxVZK4In8jwgHhJwn6E3YRyfV0RTaajPhE=",
+    "last_login": "2021-08-15T10:12:01.070Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-08-15T10:07:03.809Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 1,
+  "fields": {
+    "name": "Task"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 2,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "webapp.type",
+  "pk": 3,
+  "fields": {
+    "name": "Enhancement"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 1,
+  "fields": {
+    "name": "New"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 2,
+  "fields": {
+    "name": "In Progress"
+  }
+},
+{
+  "model": "webapp.status",
+  "pk": 3,
+  "fields": {
+    "name": "Done"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 1,
+  "fields": {
+    "title": "Сделать дз №50",
+    "description": "Сделать дз №50 до понедельника",
+    "status": 1,
+    "type": 1,
+    "created_at": "2021-08-15T10:14:20.252Z",
+    "updated_at": "2021-08-15T10:14:20.252Z"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 2,
+  "fields": {
+    "title": "Доделать дз №49",
+    "description": "Доделать дз №49 до вечера воскресенья",
+    "status": 2,
+    "type": 3,
+    "created_at": "2021-08-15T10:15:01.419Z",
+    "updated_at": "2021-08-15T10:15:01.419Z"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 3,
+  "fields": {
+    "title": "Исправить баг",
+    "description": "Исправить баг в проекте",
+    "status": 3,
+    "type": 2,
+    "created_at": "2021-08-15T10:15:25.814Z",
+    "updated_at": "2021-08-15T10:15:25.814Z"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 4,
+  "fields": {
+    "title": "Пофиксить баг в дз 59",
+    "description": "Пофиксить баг в дз 59 до дедлайна",
+    "status": 1,
+    "type": 2,
+    "created_at": "2021-08-15T10:16:08.113Z",
+    "updated_at": "2021-08-15T10:18:35.920Z"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 6,
+  "fields": {
+    "title": "Сделать кр №6",
+    "description": "Сделать кр №6 в субботу",
+    "status": 3,
+    "type": 1,
+    "created_at": "2021-08-15T10:18:05.470Z",
+    "updated_at": "2021-08-15T10:18:05.470Z"
+  }
+}
+]

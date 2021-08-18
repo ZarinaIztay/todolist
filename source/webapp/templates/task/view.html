@@ -1,0 +1,35 @@
+{% extends "base.html"%}
+
+{% block title %}
+    Task view
+{% endblock %}
+
+{% block content %}
+  <h2>Task: {{task.title}}</h2>
+
+  <table class="table">
+     <tr>
+        <th scope="row">Description</th>
+        <td>{{task.description}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Status</th>
+        <td>{{task.status}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Type</th>
+        <td>{{task.type}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Created at</th>
+        <td>{{task.created_at}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Edited at</th>
+        <td>{{task.updated_at}}</td>
+      </tr>
+  </table>
+
+    <a href="{% url 'edit_view' task.pk %}" class="btn btn-primary">Edit</a>
+    <a href="{% url 'delete_view' task.pk %}" class="btn btn-primary">Delete</a>
+{% endblock %}

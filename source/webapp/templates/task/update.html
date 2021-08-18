@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+
+{% block title %}
+    Add page
+{% endblock %}
+
+{% block content %}
+    <h2>Edit Task</h2>
+    <form method="POST" action="{% url 'edit_view' task.pk %}">
+        {% include 'partial/form.html' %}
+    </form>
+{% endblock %}
